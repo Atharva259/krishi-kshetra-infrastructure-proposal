@@ -207,7 +207,7 @@ Our software platform utilizes a microservices architecture deployed across hybr
 | **Database (Time-Series)** | TimescaleDB / PostgreSQL | Efficient indexing of high-throughput sensor telemetry with standard SQL support. |
 | **Database (NoSQL)** | MongoDB | Document storage for device metadata, configurations, and user logs. |
 | **Real-time Streaming** | Apache Kafka | Robust message queuing to ingest millions of concurrent sensor payloads without data loss. |
-| **Frontend Dashboard** | React / TypeScript / Vite | Type-safe, component-driven UI rendering high-frequency data visualizations. |
+| **Frontend / Mobile Client** | Kotlin / Jetpack Compose / Compose Multiplatform | Single codebase native performance, robust platform API integration, and strong type safety. |
 | **Edge Diagnostic Models** | PyTorch Mobile / ONNX Runtime | Running compressed machine learning models directly on mobile devices without internet connectivity. |
 | **Containerization** | Docker / Kubernetes (K8s) | Automated scaling, deployment orchestration, and environment isolation. |
 
