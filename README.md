@@ -32,16 +32,16 @@ The documentation is modularized into 10 structured sections. Use the table belo
 
 | Section | Description | Key Documents |
 | :--- | :--- | :--- |
-| **[01-Executive-Summary](./01-Executive-Summary/)** | Overview of the business, corporate mission, objectives, and roadmap. | [Roadmap](./01-Executive-Summary/Startup-Roadmap.md) \| [Objectives](./01-Executive-Summary/Objectives.md) |
-| **[02-Business](./02-Business/)** | Problem definition, proposed solution, market analysis, and revenue models. | [Problem Statement](./02-Business/Problem-Statement.md) \| [Revenue Model](./02-Business/Revenue-Model.md) |
-| **[03-Infrastructure](./03-Infrastructure/)** | Facilities planning, structural layouts, networking, power, and security systems. | [Power & Solar](./03-Infrastructure/Solar.md) \| [Networking](./03-Infrastructure/Networking.md) |
-| **[04-Development](./04-Development/)** | Desktop/laptop hardware configurations, cloud systems, storage, and backup strategies. | [NAS Setup](./04-Development/NAS.md) \| [Backup Strategy](./04-Development/Backup-Strategy.md) |
-| **[05-Robotics](./05-Robotics/)** | Mechanical and electrical lab tools, PCB fabrication, 3D printing/scanning, and safety. | [Electronics Lab](./05-Robotics/Electronics-Lab.md) \| [Mechanical Lab](./05-Robotics/Mechanical-Lab.md) |
-| **[06-Testing](./06-Testing/)** | Quality assurance environments for Android, Apple, Windows, IoT, and robotic units. | [IoT Testing](./06-Testing/IoT-Testing.md) \| [QA Process](./06-Testing/QA-Process.md) |
-| **[07-Studio](./07-Studio/)** | Audio, visual, and lighting setups for content creation, product streaming, and branding. | [Recording Setup](./07-Studio/Recording-Setup.md) \| [Branding](./07-Studio/Branding.md) |
-| **[08-Financials](./08-Financials/)** | Detailed budgeting, procurement procedures, risk management, and ROI forecasts. | [Budget Breakdown](./08-Financials/Budget-Breakdown.md) \| [Funding Request](./08-Financials/Funding-Request.md) |
-| **[09-Timeline](./09-Timeline/)** | Multi-phase execution schedule, critical milestones, and task ownership lists. | [Milestones](./09-Timeline/Milestones.md) \| [Execution Plan](./09-Timeline/Execution-Plan.md) |
-| **[10-Legal](./10-Legal/)** | Corporate registration, tax compliance, intellectual property protection, and insurance. | [Compliance](./10-Legal/Compliance.md) \| [IP Strategy](./10-Legal/Intellectual-Property.md) |
+| **[00_EXECUTIVE](./00_EXECUTIVE/)** | Executive summaries, business overview, investment memorandums, and investor FAQs. | [Executive Summary](./00_EXECUTIVE/00.01_Executive_Summary.md) \| [Investment Memo](./00_EXECUTIVE/00.02_Investment_Memorandum.md) |
+| **[01_COMPANY](./01_COMPANY/)** | Corporate identity, mission, vision, governance structure, and organizational planning. | [Vision](./01_COMPANY/01.01_Vision.md) \| [Mission](./01_COMPANY/01.02_Mission.md) |
+| **[02_MARKET_RESEARCH](./02_MARKET_RESEARCH/)** | Market segments, TAM/SAM/SOM, buyer personas, competitor analysis, and GTM strategy. | [TAM](./02_MARKET_RESEARCH/02.04_TAM.md) \| [Go To Market](./02_MARKET_RESEARCH/02.14_Go_To_Market.md) |
+| **[03_PRODUCTS](./03_PRODUCTS/)** | Product roadmap, pricing models, and specs for software, IoT, robotics, and mobile clients. | [Mobile App](./03_PRODUCTS/03.11_Mobile_App.md) \| [IoT Platform](./03_PRODUCTS/03.08_IoT_Platform.md) |
+| **[04_ENGINEERING](./04_ENGINEERING/)** | Technical architectures, software systems, AI pipelines, robotics mechatronics, and DevOps. | [Software Arch](./04_ENGINEERING/04.01_Software_Architecture.md) \| [AI Arch](./04_ENGINEERING/04.02_AI_Architecture.md) |
+| **[05_INFRASTRUCTURE](./05_INFRASTRUCTURE/)** | Headquarters, laboratory specs, energy systems, server infrastructure, and asset registers. | [Headquarters](./05_INFRASTRUCTURE/05.01_Headquarters.md) \| [Robotics Lab](./05_INFRASTRUCTURE/05.05_Robotics_Lab.md) |
+| **[06_OPERATIONS](./06_OPERATIONS/)** | Hiring forecasts, reporting hierarchy, salary frameworks, SOPs, and business continuity. | [Hiring Plan](./06_OPERATIONS/06.01_Hiring_Plan.md) \| [SOPs](./06_OPERATIONS/06.06_SOPs.md) |
+| **[07_FINANCE](./07_FINANCE/)** | Detailed CAPEX, OPEX, five-year forecasts, valuations, cashflow, and funding rounds. | [CAPEX](./07_FINANCE/07.01_CAPEX.md) \| [Five Year Forecast](./07_FINANCE/07.08_Five_Year_Forecast.md) |
+| **[08_LEGAL](./08_LEGAL/)** | Patent strategy, IP registry, compliance audits, terms of service, and risk register. | [IP Strategy](./08_LEGAL/08.02_IP_Strategy.md) \| [Compliance](./08_LEGAL/08.05_Compliance.md) |
+| **[09_MARKETING](./09_MARKETING/)** | Branding strategy, content pipelines, social media, PR, partnerships, and marketing KPIs. | [Brand Strategy](./09_MARKETING/09.01_Brand_Strategy.md) \| [Marketing Strategy](./09_MARKETING/09.02_Marketing_Strategy.md) |
 
 ---
 
@@ -50,15 +50,15 @@ Our documentation follows a progressive dependency flow. New readers should revi
 
 ```mermaid
 graph TD
-    A[01-Executive-Summary] --> B[02-Business]
-    B --> C[03-Infrastructure]
-    C --> D[04-Development]
-    C --> E[05-Robotics]
-    D & E --> F[06-Testing]
-    F --> G[07-Studio]
-    C & D & E & F & G --> H[08-Financials]
-    H --> I[09-Timeline]
-    I --> J[10-Legal]
+    A[00_EXECUTIVE] --> B[01_COMPANY]
+    B --> C[02_MARKET_RESEARCH]
+    C --> D[03_PRODUCTS]
+    D --> E[04_ENGINEERING]
+    E --> F[05_INFRASTRUCTURE]
+    F --> G[06_OPERATIONS]
+    G --> H[07_FINANCE]
+    H --> I[08_LEGAL]
+    I --> J[09_MARKETING]
 ```
 
 ---
